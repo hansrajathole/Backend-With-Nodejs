@@ -2,15 +2,15 @@
 
 ---
 
-✅ **SQL (Relational Database)**  
+**SQL (Relational Database)**  
 SQL is a structured, table-based database that uses predefined schemas and supports relationships between data using SQL queries.
 
-✅ **NoSQL (Non-Relational Database)**  
+**NoSQL (Non-Relational Database)**  
 NoSQL is a flexible, schema-less database designed for scalable and fast handling of unstructured or semi-structured data.
 
 ---
 
-## ✅ 1. What is Prisma?
+## 1. What is Prisma?
 Prisma is an open-source ORM (Object-Relational Mapping) tool that makes working with databases easier in Node.js and JavaScript/TypeScript.
 
 🔧 **What Prisma Does:**
@@ -20,12 +20,12 @@ Prisma is an open-source ORM (Object-Relational Mapping) tool that makes working
 
 ---
 
-## ✅ 2. What is PostgreSQL?
+## 2. What is PostgreSQL?
 PostgreSQL is a powerful, open-source relational database system. You can store data in tables, define relationships, run queries (using SQL), and ensure data integrity.
 
 ---
 
-## ✅ 3. What is Prisma Migrate?
+## 3. What is Prisma Migrate?
 Prisma Migrate is a feature of Prisma that allows you to:
 - Automatically generate and run SQL migration files.
 - Version-control your database schema changes.
@@ -33,7 +33,7 @@ Prisma Migrate is a feature of Prisma that allows you to:
 
 ---
 
-## ✅ 4. What is Neon?
+## 4. What is Neon?
 Neon is a serverless PostgreSQL platform. Think of it like:
 - PostgreSQL + GitHub + Vercel — it's made for cloud-based development.
 - Free tier available.
@@ -41,7 +41,7 @@ Neon is a serverless PostgreSQL platform. Think of it like:
 
 ---
 
-## ✅ 5. Step-by-Step: Implementing Prisma with PostgreSQL using JavaScript
+## 5. Step-by-Step: Implementing Prisma with PostgreSQL using JavaScript
 
 ### 🛠️ Step 1: Install Dependencies
 First, create a new Node.js project:
@@ -65,7 +65,7 @@ Initialize Prisma:
 npx prisma init
 ```
 
-✅ This creates:
+ This creates:
 - `prisma/schema.prisma`: The Prisma schema file.
 - `.env`: Where you store your database URL.
 
@@ -95,6 +95,7 @@ Example `schema.prisma`:
 ```prisma
 generator client {
   provider = "prisma-client-js"
+  output   = "../generated/prisma"
 }
 
 datasource db {
